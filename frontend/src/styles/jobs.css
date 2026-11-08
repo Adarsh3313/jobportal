@@ -1,0 +1,47 @@
+.jobs-page {
+  padding: 60px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.jobs-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.job-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.job-card p {
+  margin-bottom: 10px;
+}
+
+.job-card button {
+  width: 100%;
+  margin-top: 15px;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 12px;
+  cursor: pointer;
+}

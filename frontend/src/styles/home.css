@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fafc;
+  font-family: "Segoe UI", sans-serif;
+  color: #0f172a;
+}
+
+.home-container {
+  width: 100%;
+}
+
+/* HERO */
+
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1d4ed8
+  );
+
+  color: white;
+
+  padding: 100px 60px;
+
+  text-align: center;
+}
+
+.hero-tag {
+  display: inline-block;
+
+  background: rgba(255,255,255,.15);
+
+  padding: 10px 20px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.hero-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* METRIC CARDS */
+
+.metrics-section {
+  margin-top: -50px;
+
+  padding: 0 60px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.metric-card {
+  color: white;
+  padding: 30px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.metric-card h2 {
+  font-size: 42px;
+}
+
+.metric-card span {
+  opacity: .9;
+}
+
+.blue {
+  background: #2563eb;
+}
+
+.purple {
+  background: #7c3aed;
+}
+
+.green {
+  background: #16a34a;
+}
+
+.orange {
+  background: #ea580c;
+}
+
+/* SECTION */
+
+.section {
+  padding: 90px 60px;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+/* MODULES */
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.module-card {
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+.module-card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+/* PIPELINE */
+
+.pipeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.pipeline-step {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 20px rgba(0,0,0,.08);
+}
+
+.arrow {
+  font-size: 28px;
+  color: #2563eb;
+}
+
+/* BENEFITS */
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.benefit-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 20px rgba(0,0,0,.08);
+}
+
+/* SUCCESS */
+
+.success-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.success-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 20px rgba(0,0,0,.08);
+}
+
+.success-card h2 {
+  color: #2563eb;
+  font-size: 48px;
+}
+
+/* CTA */
+
+.cta-section {
+  margin: 60px;
+  padding: 80px;
+
+  border-radius: 30px;
+
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #2563eb
+  );
+
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 52px;
+}
+
+.cta-section p {
+  margin: 20px 0 30px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.copyright {
+  margin-top: 20px;
+  opacity: .7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .metrics-section,
+  .module-grid,
+  .benefit-grid,
+  .success-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .metrics-section,
+  .module-grid,
+  .benefit-grid,
+  .success-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+}

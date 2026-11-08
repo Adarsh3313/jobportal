@@ -1,0 +1,14 @@
+{
+  "name": "jobapplication",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Job portal: React frontend + Node/SQLite backend served as one app",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "node --no-warnings backend/server.js",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "test": "cd backend && npm test"
+  },
+  "engines": { "node": ">=22.5.0" }
+}

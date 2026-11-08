@@ -1,0 +1,12 @@
+{
+  "name": "job-portal-backend",
+  "version": "1.0.0",
+  "description": "Job Portal API (zero-dependency Node.js + SQLite). Also serves the built React frontend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "dev": "node --no-warnings --watch server.js",
+    "test": "node --no-warnings test.js"
+  },
+  "engines": { "node": ">=22.5.0" }
+}

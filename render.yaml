@@ -1,0 +1,24 @@
+# Render.com blueprint: one web service, with a disk so the database/resumes survive deploys
+services:
+  - type: web
+    name: job-portal
+    runtime: node
+    plan: starter            # disks need a paid plan; see README for the free option
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: DATA_DIR
+        value: /data
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@jobportal.com
+      - key: ADMIN_PASSWORD
+        sync: false           # you type this in the Render dashboard
